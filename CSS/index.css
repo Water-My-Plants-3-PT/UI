@@ -122,6 +122,20 @@ nav ul li a:hover {
   font-style: italic;
   font-weight: bolder;
 }
+.team h2 {
+  border: green 1px solid;
+  margin: 1rem 0 0 1rem;
+}
+.gallery {
+  border: yellow solid 1px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 1.5rem;
+  /* .member-wrapper {
+         
+    } */
+}
 .intro-text {
   width: 45%;
   margin: 3rem auto;
@@ -139,7 +153,4 @@ nav ul li a:hover {
   font-family: 'Nunito', sans-serif;
   font-weight: 600;
 }
-h2 {
-  border: red 1px solid;
-  margin: 1rem 0 0 1rem;
-}
+/* @import 'team';  */
