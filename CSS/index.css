@@ -13,13 +13,20 @@ header {
   color: #F1F3F2;
   display: flex;
   width: 100%;
-  background-color: #235B2D;
+  background-color: #303631;
 }
 header h1 {
   padding-left: 1rem;
   width: 30%;
   /* border: red solid 1px;  */
   margin-top: 1rem;
+}
+header a {
+  color: #F1F3F2;
+  text-decoration: none;
+}
+header a:hover {
+  color: #fff;
 }
 nav {
   /* border: blue 1px solid; */
@@ -55,7 +62,6 @@ nav ul li a:hover {
   justify-content: center;
 }
 .title h2 {
-  margin-top: 5.5rem;
   color: #F1F3F2;
   width: 50%;
   font-size: 4rem;
@@ -68,12 +74,13 @@ nav ul li a:hover {
 }
 .intro-text {
   width: 45%;
-  margin: 0 auto;
+  margin: 3rem auto;
 }
 .intro-text p {
   line-height: 1.5rem;
 }
 .intro-text button {
+  margin-top: 2rem;
   width: 100%;
   padding: 0.5rem 0;
   color: #F1F3F2;

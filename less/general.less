@@ -12,12 +12,20 @@ header {
     color: @white;
     display: flex;
     .flexrow(); 
-    background-color: @primary;
+    background-color: @black;
 
     h1 {
         padding-left: 1rem;
         width: 30%;
         /* border: red solid 1px;  */
         margin-top: 1rem;
+        
+    }
+    a {
+        color: @white;
+        text-decoration: none;
+        &:hover {
+            color: #fff;  
+        }
     }
 }
