@@ -9,7 +9,7 @@
   margin: 0;
 }
 header {
-  border: red solid 1px;
+  /* border: red solid 1px; */
   color: #F1F3F2;
   display: flex;
   width: 100%;
@@ -19,10 +19,10 @@ header h1 {
   padding-left: 1rem;
   width: 30%;
   /* border: red solid 1px;  */
-  margin: 1rem 0 0.75rem 0;
+  margin-top: 1rem;
 }
 nav {
-  border: blue 1px solid;
+  /* border: blue 1px solid; */
   width: 70%;
 }
 nav ul {
@@ -43,6 +43,28 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: #fff;
+}
+.title {
+  margin-top: 0;
+  background-image: url("/img/cover.jpeg");
+  height: 45vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.title h2 {
+  margin-top: 5.5rem;
+  color: #F1F3F2;
+  width: 50%;
+  font-size: 4rem;
+  /* border: red solid 1px;  */
+  text-align: center;
+}
+.title h2 span {
+  font-style: italic;
+  font-weight: bolder;
 }
 .intro-text {
   width: 45%;
