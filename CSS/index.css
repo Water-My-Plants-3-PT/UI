@@ -28,6 +28,33 @@ header a {
 header a:hover {
   color: #fff;
 }
+* {
+  box-sizing: border-box;
+}
+.container {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+}
+header {
+  /* border: red solid 1px; */
+  color: #F1F3F2;
+  display: flex;
+  width: 100%;
+  background-color: #235B2D;
+}
+header h1 {
+  padding-left: 1rem;
+  width: 30%;
+  /* border: red solid 1px;  */
+  margin-top: 1rem;
+}
+header a {
+  color: #F1F3F2;
+  text-decoration: none;
+}
+header a:hover {
+  color: #fff;
+}
 nav {
   /* border: blue 1px solid; */
   width: 70%;
@@ -49,6 +76,29 @@ nav ul li a {
   text-decoration: none;
 }
 nav ul li a:hover {
+  color: #fff;
+}
+.about-nav {
+  /* border: blue 1px solid; */
+  width: 70%;
+}
+.about-nav ul {
+  /* border: yellow solid 1px; */
+  margin-top: 0;
+  display: flex;
+  justify-content: space-around;
+}
+.about-nav ul li {
+  list-style-type: none;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  /* border: hotpink 1px solid; */
+}
+.about-nav ul li a {
+  color: #F1F3F2;
+  text-decoration: none;
+}
+.about-nav ul li a:hover {
   color: #fff;
 }
 .title {
@@ -88,4 +138,8 @@ nav ul li a:hover {
   text-transform: uppercase;
   font-family: 'Nunito', sans-serif;
   font-weight: 600;
+}
+h2 {
+  border: red 1px solid;
+  margin: 1rem 0 0 1rem;
 }
