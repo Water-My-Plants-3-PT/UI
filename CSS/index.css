@@ -55,6 +55,7 @@ nav ul li a:hover {
   justify-content: center;
 }
 .title h2 {
+  margin-top: 5.5rem;
   color: #F1F3F2;
   width: 50%;
   font-size: 4rem;
