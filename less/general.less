@@ -10,11 +10,32 @@
 header {
     /* border: red solid 1px; */
     background-image: url("/img/cover.jpeg");
-    height: 45vh;
+    height: 65vh;
     background-repeat: no-repeat;
     background-size: cover;
     color: @white;
     display: flex;
+    flex-direction: column;
 
+    .title {
+        margin-top: 0;
+        border: yellow solid 1px; 
+        .flexrow(); 
+        height: 85%; 
+        justify-content: center;
+        
+        h2{
+            color: @white;
+            width: 50%; 
+            font-size: 4rem;
+            /* border: red solid 1px;  */
+            text-align: center;
     
+            span {
+                font-style: italic;
+                font-weight: bolder;
+    
+            }
+        }
+    }
 }
