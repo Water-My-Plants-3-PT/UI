@@ -20,7 +20,6 @@ header {
 }
 header .title {
   margin-top: 0;
-  border: yellow solid 1px;
   display: flex;
   width: 100%;
   height: 85%;
@@ -30,8 +29,8 @@ header .title h2 {
   color: #F1F3F2;
   width: 50%;
   font-size: 4rem;
-  /* border: red solid 1px;  */
   text-align: center;
+  margin-top: 7rem;
 }
 header .title h2 span {
   font-style: italic;
@@ -126,23 +125,6 @@ header a:hover {
 }
 .about-nav ul li a:hover {
   color: #fff;
-}
-.title {
-  margin-top: 0;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-.title h2 {
-  color: #F1F3F2;
-  width: 50%;
-  font-size: 4rem;
-  /* border: red solid 1px;  */
-  text-align: center;
-}
-.title h2 span {
-  font-style: italic;
-  font-weight: bolder;
 }
 .intro-text {
   width: 45%;
