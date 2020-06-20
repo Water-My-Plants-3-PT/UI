@@ -10,23 +10,12 @@
 }
 header {
   /* border: red solid 1px; */
+  background-image: url("/img/cover.jpeg");
+  height: 45vh;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #F1F3F2;
   display: flex;
-  width: 100%;
-  background-color: #303631;
-}
-header h1 {
-  padding-left: 1rem;
-  width: 30%;
-  /* border: red solid 1px;  */
-  margin-top: 1rem;
-}
-header a {
-  color: #F1F3F2;
-  text-decoration: none;
-}
-header a:hover {
-  color: #fff;
 }
 * {
   box-sizing: border-box;
@@ -55,27 +44,44 @@ header a {
 header a:hover {
   color: #fff;
 }
-nav {
-  /* border: blue 1px solid; */
+.signup-nav {
+  height: 15%;
+  display: flex;
+  width: 100%;
+  background-color: rgba(48, 54, 49, 0.7);
+}
+.signup-nav h1 {
+  width: 30%;
+  margin-top: 0;
+  padding-top: 0.5rem;
+}
+.signup-nav h1 a {
+  color: #F1F3F2;
+  text-decoration: none;
+}
+.signup-nav h1 a:hover {
+  color: #fff;
+}
+.signup-nav nav {
   width: 70%;
 }
-nav ul {
+.signup-nav nav ul {
   /* border: yellow solid 1px; */
   margin-top: 0;
   display: flex;
   justify-content: space-around;
 }
-nav ul li {
+.signup-nav nav ul li {
   list-style-type: none;
   padding: 0.5rem;
   margin-top: 1rem;
   /* border: hotpink 1px solid; */
 }
-nav ul li a {
+.signup-nav nav ul li a {
   color: #F1F3F2;
   text-decoration: none;
 }
-nav ul li a:hover {
+.signup-nav nav ul li a:hover {
   color: #fff;
 }
 .about-nav {
@@ -103,10 +109,6 @@ nav ul li a:hover {
 }
 .title {
   margin-top: 0;
-  background-image: url("/img/cover.jpeg");
-  height: 45vh;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   width: 100%;
   justify-content: center;
