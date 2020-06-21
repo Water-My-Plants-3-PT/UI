@@ -139,6 +139,6 @@ nav ul li .about {
   font-weight: 600;
 }
 h2 {
-  border: red 1px solid;
+  /* border: red 1px solid; */
   margin: 1rem 0 0 1rem;
 }
