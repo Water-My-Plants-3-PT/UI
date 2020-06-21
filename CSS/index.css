@@ -9,7 +9,40 @@
   margin: 0;
 }
 header {
-  /* border: red solid 1px; */
+  background-image: url("/img/cover.jpeg");
+  height: 65vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #F1F3F2;
+  display: flex;
+  flex-direction: column;
+}
+header .title {
+  margin-top: 0;
+  display: flex;
+  width: 100%;
+  height: 85%;
+  justify-content: center;
+}
+header .title h2 {
+  color: #F1F3F2;
+  width: 50%;
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 7rem;
+}
+header .title h2 span {
+  font-style: italic;
+  font-weight: bolder;
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+}
+header {
   color: #F1F3F2;
   display: flex;
   width: 100%;
@@ -18,15 +51,37 @@ header {
 header h1 {
   padding-left: 1rem;
   width: 30%;
-  /* border: red solid 1px;  */
   margin-top: 1rem;
 }
+header a {
+  color: #F1F3F2;
+  text-decoration: none;
+}
+header a:hover {
+  color: #fff;
+}
+.signup-nav {
+  height: 15%;
+  display: flex;
+  width: 100%;
+  background-color: rgba(48, 54, 49, 0.7);
+}
+.signup-nav h1 {
+  width: 30%;
+  margin-top: 0;
+  padding-top: 0.5rem;
+}
+.signup-nav h1 a {
+  color: #F1F3F2;
+  text-decoration: none;
+}
+.signup-nav h1 a:hover {
+  color: #fff;
+}
 nav {
-  /* border: blue 1px solid; */
   width: 70%;
 }
 nav ul {
-  /* border: yellow solid 1px; */
   margin-top: 0;
   display: flex;
   justify-content: space-around;
@@ -35,7 +90,6 @@ nav ul li {
   list-style-type: none;
   padding: 0.5rem;
   margin-top: 1rem;
-  /* border: hotpink 1px solid; */
 }
 nav ul li a {
   color: #F1F3F2;
@@ -44,36 +98,38 @@ nav ul li a {
 nav ul li a:hover {
   color: #fff;
 }
-.title {
+nav ul li .about {
+  margin-right: auto;
+}
+.about-nav {
+  width: 70%;
+}
+.about-nav ul {
   margin-top: 0;
-  background-image: url("/img/cover.jpeg");
-  height: 45vh;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
-  width: 100%;
-  justify-content: center;
+  justify-content: space-around;
 }
-.title h2 {
-  margin-top: 5.5rem;
+.about-nav ul li {
+  list-style-type: none;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+.about-nav ul li a {
   color: #F1F3F2;
-  width: 50%;
-  font-size: 4rem;
-  /* border: red solid 1px;  */
-  text-align: center;
+  text-decoration: none;
 }
-.title h2 span {
-  font-style: italic;
-  font-weight: bolder;
+.about-nav ul li a:hover {
+  color: #fff;
 }
 .intro-text {
   width: 45%;
-  margin: 0 auto;
+  margin: 3rem auto;
 }
 .intro-text p {
   line-height: 1.5rem;
 }
 .intro-text button {
+  margin-top: 2rem;
   width: 100%;
   padding: 0.5rem 0;
   color: #F1F3F2;
@@ -81,4 +137,8 @@ nav ul li a:hover {
   text-transform: uppercase;
   font-family: 'Nunito', sans-serif;
   font-weight: 600;
+}
+h2 {
+  border: red 1px solid;
+  margin: 1rem 0 0 1rem;
 }

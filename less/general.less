@@ -8,16 +8,32 @@
 }
 
 header {
-    /* border: red solid 1px; */
+    background-image: url("/img/cover.jpeg");
+    height: 65vh;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: @white;
     display: flex;
-    .flexrow(); 
-    background-color: @primary;
+    flex-direction: column;
 
-    h1 {
-        padding-left: 1rem;
-        width: 30%;
-        /* border: red solid 1px;  */
-        margin-top: 1rem;
+    .title {
+        margin-top: 0;
+        .flexrow(); 
+        height: 85%; 
+        justify-content: center;
+        
+        h2{
+            color: @white;
+            width: 50%; 
+            font-size: 4rem;
+            text-align: center;
+            margin-top: 7rem;
+    
+            span {
+                font-style: italic;
+                font-weight: bolder;
+    
+            }
+        }
     }
 }
