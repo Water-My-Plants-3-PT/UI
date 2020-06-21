@@ -9,7 +9,6 @@
   margin: 0;
 }
 header {
-  /* border: red solid 1px; */
   background-image: url("/img/cover.jpeg");
   height: 65vh;
   background-repeat: no-repeat;
@@ -44,7 +43,6 @@ header .title h2 span {
   margin: 0;
 }
 header {
-  /* border: red solid 1px; */
   color: #F1F3F2;
   display: flex;
   width: 100%;
@@ -53,7 +51,6 @@ header {
 header h1 {
   padding-left: 1rem;
   width: 30%;
-  /* border: red solid 1px;  */
   margin-top: 1rem;
 }
 header a {
@@ -81,34 +78,33 @@ header a:hover {
 .signup-nav h1 a:hover {
   color: #fff;
 }
-.signup-nav nav {
+nav {
   width: 70%;
 }
-.signup-nav nav ul {
-  /* border: yellow solid 1px; */
+nav ul {
   margin-top: 0;
   display: flex;
   justify-content: space-around;
 }
-.signup-nav nav ul li {
+nav ul li {
   list-style-type: none;
   padding: 0.5rem;
   margin-top: 1rem;
-  /* border: hotpink 1px solid; */
 }
-.signup-nav nav ul li a {
+nav ul li a {
   color: #F1F3F2;
   text-decoration: none;
 }
-.signup-nav nav ul li a:hover {
+nav ul li a:hover {
   color: #fff;
 }
+nav ul li .about {
+  margin-right: auto;
+}
 .about-nav {
-  /* border: blue 1px solid; */
   width: 70%;
 }
 .about-nav ul {
-  /* border: yellow solid 1px; */
   margin-top: 0;
   display: flex;
   justify-content: space-around;
@@ -117,7 +113,6 @@ header a:hover {
   list-style-type: none;
   padding: 0.5rem;
   margin-top: 1rem;
-  /* border: hotpink 1px solid; */
 }
 .about-nav ul li a {
   color: #F1F3F2;

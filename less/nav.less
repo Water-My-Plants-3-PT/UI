@@ -1,11 +1,9 @@
 .signup-nav {
-    // border: lawngreen solid 1px;
     width: 100%; 
     height: 15%;
     .flexrow(); 
     background-color: @black;
     h1 {
-        // border: red solid 1px;
         width: 30%; 
         margin-top: 0;
         padding-top: .5rem;
@@ -15,35 +13,39 @@
             &:hover {
                 color: #fff;  
             }
-        }
-    }
+        }      
+    } 
+}
+
+nav {
+    width: 70%;
+
+    ul {
+        margin-top: 0;
+        display: flex; 
+        justify-content: space-around;
     
-    nav {
-        width: 70%;
-    
-        ul {
-            /* border: yellow solid 1px; */
-            margin-top: 0;
-            display: flex; 
-            justify-content: space-around;
-        
-            li {
-                list-style-type: none;
-                padding: .5rem;
-                margin-top: 1rem;
-                /* border: hotpink 1px solid; */ 
-    
-                
-                a {
-                    color: @white; 
-                    text-decoration: none;
-                    &:hover {
-                        color: #fff;
-                    }
+        li {
+            list-style-type: none;
+            padding: .5rem;
+            margin-top: 1rem;
+
+            a {
+                color: @white; 
+                text-decoration: none;
+                &:hover {
+                    color: #fff; 
                 }
+            }
+
+            .about {
+                margin-right: auto;
             }
         }
     }
 }
+    
+    
+
 
 
