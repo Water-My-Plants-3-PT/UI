@@ -8,7 +8,7 @@
   font-family: 'Nunito', sans-serif;
   margin: 0;
 }
-header {
+.signup-header {
   background-image: url("/img/cover.jpeg");
   height: 65vh;
   background-repeat: no-repeat;
@@ -17,21 +17,21 @@ header {
   display: flex;
   flex-direction: column;
 }
-header .title {
+.signup-header .title {
   margin-top: 0;
   display: flex;
   width: 100%;
   height: 85%;
   justify-content: center;
 }
-header .title h2 {
+.signup-header .title h2 {
   color: #F1F3F2;
   width: 50%;
   font-size: 4rem;
   text-align: center;
   margin-top: 7rem;
 }
-header .title h2 span {
+.signup-header .title h2 span {
   font-style: italic;
   font-weight: bolder;
 }
@@ -42,22 +42,22 @@ header .title h2 span {
   font-family: 'Nunito', sans-serif;
   margin: 0;
 }
-header {
+.about-header {
   color: #F1F3F2;
   display: flex;
   width: 100%;
   background-color: #235B2D;
 }
-header h1 {
+.about-header h1 {
   padding-left: 1rem;
   width: 30%;
   margin-top: 1rem;
 }
-header a {
+.about-header a {
   color: #F1F3F2;
   text-decoration: none;
 }
-header a:hover {
+.about-header a:hover {
   color: #fff;
 }
 .signup-nav {
