@@ -138,7 +138,37 @@ nav ul li .about {
   font-family: 'Nunito', sans-serif;
   font-weight: 600;
 }
-h2 {
-  /* border: red 1px solid; */
+.team {
+  background-image: url('/img/about-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right bottom;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.team h2 {
   margin: 1rem 0 0 1rem;
+}
+.team .gallery {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  justify-content: space-around;
+}
+.portrait {
+  padding-top: 1rem;
+}
+.portrait h3 {
+  color: rgba(48, 54, 49, 0.7);
+}
+.portrait .member-title {
+  color: #79867C;
+  margin: 0 auto;
+}
+.portrait .member-quote {
+  color: #79867C;
+  margin: 0 auto;
 }

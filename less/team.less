@@ -1,4 +1,33 @@
-h2 {
-    border: red 1px solid; 
-    margin: 1rem 0 0 1rem; 
+.team {
+    background-image: url('/img/about-bg.png'); 
+    background-repeat: no-repeat;
+    // background-size: 100% 80%;
+    background-size: contain; 
+    background-position: right bottom;
+    height: 100vh; 
+    .flexcolumn(); 
+    h2 {
+        margin: 1rem 0 0 1rem;
+    }
+    .gallery {
+        .flexrow(); 
+        flex-wrap: wrap;
+        margin-top: 1rem;
+        // border: hotpink 1px solid;
+        justify-content: space-around;
+    }
 }
+
+.portrait {
+    padding-top: 1rem;
+    h3 {
+        color: @black;
+    }
+    .member-title {
+        .portrait-text(); 
+    }
+    .member-quote {
+        .portrait-text(); 
+    }
+}
+
