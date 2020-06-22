@@ -70,6 +70,7 @@
   width: 30%;
   margin-top: 0;
   padding-top: 0.5rem;
+  padding-left: 1.5rem;
 }
 .signup-nav h1 a {
   color: #F1F3F2;
@@ -143,6 +144,7 @@ nav ul li .about {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right bottom;
+  background-color: #FAFAFA;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -167,8 +169,10 @@ nav ul li .about {
 .portrait .member-title {
   color: #79867C;
   margin: 0 auto;
+  font-size: 1rem;
 }
 .portrait .member-quote {
   color: #79867C;
   margin: 0 auto;
+  font-size: 1rem;
 }
