@@ -17,6 +17,21 @@
         .font(); 
         font-weight: 600;
     }
+    .about-us-button {
+        // visibility: hidden;
+        margin-top: 2rem;
+        width: 100%;
+        padding: .5rem 0;
+        border: @primary 1px solid;
+        background-color: @white;
+        text-transform: uppercase;
+        .font(); 
+        font-weight: 600;
+        a {
+            text-decoration: none;
+            color: @primary;
+        }
+    }
 }
 
 @media @mobile {
@@ -36,5 +51,9 @@
 
     button {
         border-radius: .25rem;
+    }
+
+    .about-us-button{
+        visibility: visible;
     }
 }
