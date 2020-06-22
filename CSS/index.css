@@ -73,6 +73,11 @@
 .about-header a:hover {
   color: #fff;
 }
+@media (max-width: 500px) {
+  .about-header h1 {
+    width: auto;
+  }
+}
 .signup-nav {
   height: 15%;
   display: flex;
@@ -237,15 +242,18 @@ nav ul li .about {
   font-size: 1rem;
 }
 @media (max-width: 500px) {
-  .card {
-    border: red solid 1px;
+  .team {
+    background-image: none;
+  }
+  .team .card {
+    border: green solid 1px;
     display: flex;
     width: 100%;
   }
-  .card .member-info {
+  .team .card .member-info {
     flex-direction: column;
   }
-  .left {
+  .team .left {
     flex-direction: row-reverse;
   }
 }
