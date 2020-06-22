@@ -172,6 +172,7 @@ nav ul li .about {
   font-weight: 600;
 }
 .intro-text .about-us-button {
+  display: none;
   margin-top: 2rem;
   width: 100%;
   padding: 0.5rem 0;
@@ -201,7 +202,7 @@ nav ul li .about {
     border-radius: 0.25rem;
   }
   .about-us-button {
-    visibility: visible;
+    display: block !important;
   }
 }
 .team {
