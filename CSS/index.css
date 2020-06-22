@@ -220,19 +220,32 @@ nav ul li .about {
   margin-top: 1rem;
   justify-content: space-around;
 }
-.portrait {
+.card {
   padding-top: 1rem;
 }
-.portrait h3 {
+.card h3 {
   color: rgba(48, 54, 49, 0.7);
 }
-.portrait .member-title {
+.card .member-title {
   color: #79867C;
   margin: 0 auto;
   font-size: 1rem;
 }
-.portrait .member-quote {
+.card .member-quote {
   color: #79867C;
   margin: 0 auto;
   font-size: 1rem;
+}
+@media (max-width: 500px) {
+  .card {
+    border: red solid 1px;
+    display: flex;
+    width: 100%;
+  }
+  .card .member-info {
+    flex-direction: column;
+  }
+  .left {
+    flex-direction: row-reverse;
+  }
 }

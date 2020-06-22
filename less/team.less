@@ -19,7 +19,7 @@
     }
 }
 
-.portrait {
+.card {
     padding-top: 1rem;
     h3 {
         color: @black;
@@ -31,4 +31,21 @@
         .portrait-text(); 
     }
 }
+
+@media @mobile {
+    .card {
+        border: red solid 1px; 
+        .flexcard-right(); 
+        .member-info {
+            flex-direction: column;
+        }
+
+    }
+    .left {
+        .flexcard-left(); 
+    }
+    
+
+}
+
 
