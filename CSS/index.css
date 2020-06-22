@@ -79,6 +79,15 @@
 .signup-nav h1 a:hover {
   color: #fff;
 }
+@media (max-width: 500px) {
+  .signup-nav {
+    background-color: #235B2D;
+  }
+  .signup-nav h1 {
+    width: auto;
+    padding: 1rem 0 1rem 1.25rem;
+  }
+}
 nav {
   width: 70%;
 }
@@ -101,6 +110,11 @@ nav ul li a:hover {
 }
 nav ul li .about {
   margin-right: auto;
+}
+@media (max-width: 500px) {
+  nav {
+    display: none;
+  }
 }
 .about-nav {
   width: 70%;
