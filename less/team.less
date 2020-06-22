@@ -36,18 +36,27 @@
     .team {
         background-image: none;
         .card {
-            border: green solid 1px; 
+            img {
+                width: 50%;
+            }
             .flexcard-right(); 
+            padding: 1rem; 
             .member-info {
                 flex-direction: column;
+                width: 50%;
+                
+                h3 {
+                    .membername(); 
+                }
             }
-    
         }
         .left {
-            .flexcard-left(); 
+            .flexcard-left();
+            .lft {
+                text-align: right;
+            } 
         }
     }
-
 }
 
 

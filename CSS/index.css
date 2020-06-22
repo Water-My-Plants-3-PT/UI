@@ -247,14 +247,25 @@ nav ul li .about {
     background-image: none;
   }
   .team .card {
-    border: green solid 1px;
     display: flex;
     width: 100%;
+    padding: 1rem;
+  }
+  .team .card img {
+    width: 50%;
   }
   .team .card .member-info {
     flex-direction: column;
+    width: 50%;
+  }
+  .team .card .member-info h3 {
+    padding: 1rem 1rem 0 1rem;
+    margin-bottom: 0;
   }
   .team .left {
     flex-direction: row-reverse;
+  }
+  .team .left .lft {
+    text-align: right;
   }
 }
