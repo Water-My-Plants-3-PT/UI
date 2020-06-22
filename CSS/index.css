@@ -228,6 +228,10 @@ nav ul li .about {
 }
 .card {
   padding-top: 1rem;
+  width: 14rem;
+}
+.card img {
+  width: 100%;
 }
 .card h3 {
   color: rgba(48, 54, 49, 0.7);
