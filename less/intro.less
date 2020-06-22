@@ -4,6 +4,7 @@
 
     p {
         line-height: 1.5rem;
+        
     }
 
     button {
@@ -15,6 +16,25 @@
         text-transform: uppercase;
         .font(); 
         font-weight: 600;
-        
+    }
+}
+
+@media @mobile {
+    .intro-text {
+        width: 90%;
+    } 
+
+    p {
+        width: 85%; 
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+    
+    .second-p {
+        display: none;
+    }
+
+    button {
+        border-radius: .25rem;
     }
 }

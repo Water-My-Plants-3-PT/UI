@@ -166,6 +166,22 @@ nav ul li .about {
   font-family: 'Nunito', sans-serif;
   font-weight: 600;
 }
+@media (max-width: 500px) {
+  .intro-text {
+    width: 90%;
+  }
+  p {
+    width: 85%;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .second-p {
+    display: none;
+  }
+  button {
+    border-radius: 0.25rem;
+  }
+}
 .team {
   background-image: url('/img/about-bg.png');
   background-repeat: no-repeat;
