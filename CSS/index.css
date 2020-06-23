@@ -38,7 +38,7 @@
 @media (max-width: 500px) {
   .signup-header {
     background-image: url("/img/cover.jpeg");
-    height: 40vh;
+    height: 45vh;
     background-repeat: no-repeat;
     background-size: cover;
     color: #F1F3F2;
@@ -46,7 +46,7 @@
     flex-direction: column;
   }
   .signup-header .title h2 {
-    margin-top: 3.3rem;
+    margin: 3.5rem 0 1rem 0;
     color: #F1F3F2;
     width: 85%;
     text-align: center;
@@ -205,18 +205,21 @@ nav ul li .about {
     margin: 0 auto;
   }
   p {
-    margin: 2rem 0 0 0;
+    margin: 3rem 0 3rem 0;
     font-size: 1.5rem;
     line-height: 1.5rem;
+    color: #79867C;
   }
   .second-p {
     display: none;
   }
   button {
     border-radius: 0.25rem;
+    font-size: larger;
   }
   .about-us-button {
     display: block !important;
+    margin-bottom: 1rem;
   }
 }
 .team {
