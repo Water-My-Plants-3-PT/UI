@@ -110,9 +110,10 @@
 @media (max-width: 500px) {
   .signup-nav {
     background-color: #235B2D;
+    height: 25%;
   }
   .signup-nav h1 {
-    width: auto;
+    width: 100%;
     padding: 1rem 0 1rem 1.25rem;
   }
 }
@@ -198,10 +199,13 @@ nav ul li .about {
 }
 @media (max-width: 500px) {
   .intro-text {
+    display: flex;
+    flex-direction: column;
     width: 90%;
+    margin: 0 auto;
   }
   p {
-    width: 85%;
+    margin: 2rem 0 0 0;
     font-size: 1.5rem;
     line-height: 1.5rem;
   }
