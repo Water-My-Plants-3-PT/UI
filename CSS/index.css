@@ -36,9 +36,19 @@
   font-weight: bolder;
 }
 @media (max-width: 500px) {
-  .signup-header .title h2 {
+  .signup-header {
+    background-image: url("/img/cover.jpeg");
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #F1F3F2;
-    width: 75%;
+    display: flex;
+    flex-direction: column;
+  }
+  .signup-header .title h2 {
+    margin-top: 3.3rem;
+    color: #F1F3F2;
+    width: 85%;
     text-align: center;
     font-size: 3rem;
     font-weight: 400;
