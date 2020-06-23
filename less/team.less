@@ -1,4 +1,68 @@
-h2 {
-    border: red 1px solid; 
-    margin: 1rem 0 0 1rem; 
+.team {
+    background-image: url('/img/about-bg.png'); 
+    background-repeat: no-repeat;
+    // background-size: 100% 80%;
+    background-size: contain; 
+    background-position: right bottom;
+    background-color: #FAFAFA;
+    height: 100vh; 
+    .flexcolumn(); 
+    h2 {
+        margin: 1rem 0 0 1rem;
+    }
+    .gallery {
+        .flexrow(); 
+        flex-wrap: wrap;
+        margin-top: 1rem;
+        // border: hotpink 1px solid;
+        justify-content: space-around;
+    }
 }
+
+.card {
+    padding-top: 1rem;
+    width: 14rem;  
+    img {
+        width: 100%; 
+    }
+    h3 {
+        color: @black;
+    }
+    .member-title {
+        .portrait-text(); 
+    }
+    .member-quote {
+        .portrait-text(); 
+    }
+}
+
+@media @mobile {
+    .team {
+        background-image: none;
+        .card {
+            img {
+                width: 50%;
+            }
+            .flexcard-right(); 
+            padding: 1rem; 
+            .member-info {
+                flex-direction: column;
+                width: 50%;
+                
+                h3 {
+                    .membername(); 
+                }
+            }
+        }
+        .left {
+            .flexcard-left();
+            .lft {
+                text-align: right;
+            } 
+        }
+    }
+}
+
+
+
+

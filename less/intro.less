@@ -4,6 +4,7 @@
 
     p {
         line-height: 1.5rem;
+        
     }
 
     button {
@@ -15,6 +16,44 @@
         text-transform: uppercase;
         .font(); 
         font-weight: 600;
-        
+    }
+    .about-us-button {
+        display: none;
+        margin-top: 2rem;
+        width: 100%;
+        padding: .5rem 0;
+        border: @primary 1px solid;
+        background-color: @white;
+        text-transform: uppercase;
+        .font(); 
+        font-weight: 600;
+        a {
+            text-decoration: none;
+            color: @primary;
+        }
+    }
+}
+
+@media @mobile {
+    .intro-text {
+        width: 90%;
+    } 
+
+    p {
+        width: 85%; 
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+    
+    .second-p {
+        display: none;
+    }
+
+    button {
+        border-radius: .25rem;
+    }
+
+    .about-us-button{
+        display: block !important;
     }
 }
