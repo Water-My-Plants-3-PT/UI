@@ -27,8 +27,8 @@
 }
 .signup-header .title h2 {
   color: #F1F3F2;
-  width: 50%;
-  font-size: 4rem;
+  width: 45%;
+  font-size: 3rem;
   text-align: center;
   margin-top: 7rem;
 }
@@ -57,6 +57,12 @@
   .signup-header .title h2 span {
     font-style: normal;
     font-weight: 600;
+  }
+}
+@media (min-width: 1130px) {
+  .signup-header .title h2 {
+    font-size: 4rem;
+    width: 35%;
   }
 }
 * {
