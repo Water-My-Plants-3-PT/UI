@@ -263,7 +263,7 @@ nav ul li .about {
 }
 .card {
   padding-top: 1rem;
-  width: 14rem;
+  width: 16rem;
 }
 .card img {
   width: 100%;
@@ -273,12 +273,12 @@ nav ul li .about {
 }
 .card .member-title {
   color: #79867C;
-  margin: 0 auto;
+  margin: 0 1rem;
   font-size: 1rem;
 }
 .card .member-quote {
   color: #79867C;
-  margin: 0 auto;
+  margin: 0 1rem;
   font-size: 1rem;
 }
 @media (max-width: 500px) {
