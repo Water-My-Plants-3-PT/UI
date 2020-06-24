@@ -12,12 +12,13 @@
     display: flex;
     .flexrow(); 
     background-color: @primary;
+    height: 15%; 
 
     h1 {
-        padding-left: 1rem;
-        width: 30%;
-        margin-top: 1rem;
-        
+        width: 30%; 
+        margin-top: 0;
+        padding-top: .5rem;
+        padding-left: 1.5rem;
     }
     a {
         color: @white;
@@ -26,9 +27,24 @@
             color: #fff;  
         }
     }
-    @media @mobile {
+}
+
+@media @mobile {
+    .about-header {
+        height: 10%;
         h1 {
-            width: auto; 
+            width: 100%;
+            margin-top: 1rem;
+            padding-top: .5rem;
+            padding-left: 1rem;
+            font-size: 2rem;
+            a {
+                color: @white;
+                text-decoration: none;
+                &:hover {
+                color: #fff;  
+                }
+            }  
         }
     }
 }
