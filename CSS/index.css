@@ -245,11 +245,13 @@ table {
 @media (max-width: 500px) {
   .signup-nav {
     background-color: #235B2D;
-    height: 25%;
+    height: 15%;
   }
   .signup-nav h1 {
+    font-size: 1.5rem;
     width: 100%;
-    padding: 1rem 0 1rem 1.25rem;
+    /* padding: 1rem 0 1rem 1.25rem; */
+    padding: 1rem;
   }
 }
 nav {
