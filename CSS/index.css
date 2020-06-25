@@ -453,3 +453,20 @@ nav ul li .about {
     text-align: right;
   }
 }
+@media (max-width: 399px) and (min-width: 250px) {
+  .team .gallery .card {
+    flex-direction: column;
+    width: 100%;
+  }
+  .team .gallery img {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .team .gallery .member-info {
+    width: 100%;
+    text-align: center;
+  }
+  .team .gallery .member-info h3 {
+    font-weight: 700;
+  }
+}
