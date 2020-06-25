@@ -205,12 +205,12 @@ table {
   display: flex;
   width: 100%;
   background-color: #235B2D;
-  height: 15%;
+  height: 10%;
 }
 .about-header h1 {
   width: 30%;
-  margin-top: 0;
-  padding-top: 0.5rem;
+  margin-top: 1rem;
+  font-size: 3rem;
   padding-left: 1.5rem;
 }
 .about-header a {
@@ -247,9 +247,10 @@ table {
 }
 .signup-nav h1 {
   width: 30%;
-  margin-top: 0;
+  margin-top: 1rem;
   padding-top: 0.5rem;
   padding-left: 1.5rem;
+  font-size: 3rem;
 }
 .signup-nav h1 a {
   color: #F1F3F2;
@@ -280,7 +281,8 @@ nav ul {
 nav ul li {
   list-style-type: none;
   padding: 0.5rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
 }
 nav ul li a {
   color: #F1F3F2;
@@ -309,6 +311,7 @@ nav ul li .about {
   list-style-type: none;
   padding: 0.5rem;
   margin-top: 1rem;
+  font-size: 1.5rem;
 }
 .about-nav ul li a {
   color: #F1F3F2;
@@ -323,6 +326,7 @@ nav ul li .about {
 }
 .intro-text p {
   line-height: 1.5rem;
+  margin-bottom: 2rem;
 }
 .intro-text button {
   margin-top: 2rem;
@@ -407,8 +411,8 @@ nav ul li .about {
   justify-content: space-around;
 }
 .card {
-  padding-top: 1rem;
-  width: 16rem;
+  padding: 0.5rem;
+  width: 13rem;
 }
 .card img {
   width: 100%;
