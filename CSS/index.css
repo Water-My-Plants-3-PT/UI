@@ -402,6 +402,7 @@ nav ul li .about {
 }
 .team h2 {
   margin: 1rem 0 0 1rem;
+  font-size: 1.5rem;
 }
 .team .gallery {
   display: flex;
@@ -418,17 +419,22 @@ nav ul li .about {
   width: 100%;
 }
 .card h3 {
-  color: rgba(48, 54, 49, 0.7);
+  /* color: @black;
+        padding: 1rem 0;  */
+  margin: 1rem 0 0.5rem 0;
+  font-size: 1.2rem;
 }
 .card .member-title {
   color: #79867C;
   margin: 0 1rem;
   font-size: 1rem;
+  margin: 1rem 0 0.5rem 0;
 }
 .card .member-quote {
   color: #79867C;
   margin: 0 1rem;
   font-size: 1rem;
+  margin: 0.2rem 0 0.5rem 0;
 }
 @media (max-width: 500px) {
   .team {
@@ -447,8 +453,8 @@ nav ul li .about {
     width: 50%;
   }
   .team .card .member-info h3 {
-    padding: 1rem 1rem 0 1rem;
-    margin-bottom: 0;
+    margin: 1rem 0 0.5rem 0;
+    font-size: 1.2rem;
   }
   .team .left {
     flex-direction: row-reverse;
