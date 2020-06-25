@@ -262,12 +262,11 @@ table {
 @media (max-width: 500px) {
   .signup-nav {
     background-color: #235B2D;
-    height: 15%;
+    height: 22%;
   }
   .signup-nav h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     width: 100%;
-    padding: 1rem;
   }
 }
 nav {
@@ -478,5 +477,13 @@ nav ul li .about {
   }
   .team .gallery .member-info h3 {
     font-weight: 700;
+  }
+}
+@media (min-width: 1130px) {
+  .gallery .card {
+    width: 10rem;
+  }
+  .gallery .jons-pic {
+    height: 13rem !important;
   }
 }
