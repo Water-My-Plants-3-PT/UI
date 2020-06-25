@@ -210,7 +210,7 @@ table {
 .about-header h1 {
   width: 30%;
   margin-top: 1rem;
-  font-size: 3rem;
+  font-size: 2rem;
   padding-left: 1.5rem;
 }
 .about-header a {
@@ -250,7 +250,7 @@ table {
   margin-top: 1rem;
   padding-top: 0.5rem;
   padding-left: 1.5rem;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .signup-nav h1 a {
   color: #F1F3F2;
@@ -282,7 +282,7 @@ nav ul li {
   list-style-type: none;
   padding: 0.5rem;
   margin-top: 1.5rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 nav ul li a {
   color: #F1F3F2;
@@ -311,7 +311,7 @@ nav ul li .about {
   list-style-type: none;
   padding: 0.5rem;
   margin-top: 1rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .about-nav ul li a {
   color: #F1F3F2;
