@@ -418,8 +418,6 @@ nav ul li .about {
   width: 100%;
 }
 .card h3 {
-  /* color: @black;
-        padding: 1rem 0;  */
   margin: 1rem 0 0.5rem 0;
   font-size: 1.2rem;
 }
@@ -484,6 +482,6 @@ nav ul li .about {
     width: 10rem;
   }
   .gallery .jons-pic {
-    height: 13rem !important;
+    height: 10rem !important;
   }
 }
