@@ -412,7 +412,7 @@ nav ul li .about {
 }
 .card {
   padding: 0.5rem;
-  width: 13rem;
+  width: 15rem;
 }
 .card img {
   width: 100%;
@@ -481,7 +481,10 @@ nav ul li .about {
   .gallery .card {
     width: 10rem;
   }
+  .gallery .member-info {
+    /* border: blue 1px solid; */
+  }
   .gallery .jons-pic {
-    height: 10rem !important;
+    height: 9rem !important;
   }
 }
