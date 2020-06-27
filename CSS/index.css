@@ -193,6 +193,11 @@ table {
     width: 35%;
   }
 }
+@media (max-width: 1129px) and (min-width: 501px) {
+  .signup-header .signup-nav {
+    height: max-content;
+  }
+}
 * {
   box-sizing: border-box;
 }
