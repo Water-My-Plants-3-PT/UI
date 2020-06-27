@@ -366,6 +366,10 @@ nav ul li .about {
   font-family: 'Nunito', sans-serif;
   font-weight: 600;
 }
+.intro-text button a {
+  text-decoration: none;
+  color: #F1F3F2;
+}
 .intro-text .about-us-button {
   display: none;
   margin-top: 2rem;
