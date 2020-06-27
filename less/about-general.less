@@ -12,7 +12,7 @@
     display: flex;
     .flexrow(); 
     background-color: @primary;
-    height: 10%; 
+    height: max-content; 
 
     h1 {
         width: 30%; 
@@ -20,6 +20,7 @@
         font-size: 2rem;
         padding-left: 1.5rem;
     }
+    
     a {
         color: @white;
         text-decoration: none;
@@ -27,16 +28,17 @@
             color: #fff;  
         }
     }
+    
+    
 }
 
 @media @mobile {
     .about-header {
-        height: 10%;
+        height: max-content;
         h1 {
             width: 100%;
             margin-top: 1rem;
-            padding-top: .5rem;
-            padding-left: 1rem;
+            padding: .5rem 1rem .5rem 0;
             font-size: 2rem;
             a {
                 color: @white;
@@ -49,6 +51,16 @@
     }
 }
 
-/* @media @tablet {
-
-} */
+@media @tablet {
+    .about-header {
+        display: flex;
+        flex-direction: column;
+        
+        h1 {
+            // border: red 1px solid;
+            width: 100%; 
+            .mainheading(); 
+            // text-align: center;
+        }
+    }
+}
