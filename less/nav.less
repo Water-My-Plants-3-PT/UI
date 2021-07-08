@@ -5,9 +5,10 @@
     background-color: @black;
     h1 {
         width: 30%; 
-        margin-top: 0;
+        margin-top: 1rem;
         padding-top: .5rem;
         padding-left: 1.5rem;
+        font-size: 2rem;
         a {
             color: @white;
             text-decoration: none;
@@ -16,19 +17,22 @@
             }
         }      
     } 
-    @media @mobile {
+    
+}
+@media @mobile {
+    .signup-nav {
         background-color: @primary;
-        h1{
-            width: auto;
-            padding: 1rem 0 1rem 1.25rem;
+        height: 22%;
 
+        h1 {
+            font-size: 2rem;
+            width: 100%;
         }
     }
 }
 
 nav {
-    width: 70%;
-
+    width: 70%; 
     ul {
         margin-top: 0;
         display: flex; 
@@ -37,7 +41,8 @@ nav {
         li {
             list-style-type: none;
             padding: .5rem;
-            margin-top: 1rem;
+            margin-top: 1.5rem;
+            font-size: 1rem;
 
             a {
                 color: @white; 
@@ -58,6 +63,20 @@ nav {
     }
 }
     
+@media @tablet {
+    
+    nav {
+        width: 100%;
+        ul {
+            li {
+                width: 25%; 
+                text-align: center;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}  
+
     
 
 

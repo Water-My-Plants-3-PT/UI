@@ -12,13 +12,14 @@
     display: flex;
     .flexrow(); 
     background-color: @primary;
-
     h1 {
-        padding-left: 1rem;
-        width: 30%;
-        margin-top: 1rem;
-        
+        width: 30%; 
+        margin-top: 1.5rem;
+        font-size: 2rem;
+        padding-left: 1.5rem;
+        padding-bottom: 2.5rem;
     }
+    
     a {
         color: @white;
         text-decoration: none;
@@ -26,9 +27,39 @@
             color: #fff;  
         }
     }
-    @media @mobile {
+}
+
+
+
+@media @mobile {
+    .about-header {
+        height: max-content;
         h1 {
-            width: auto; 
+            width: 100%;
+            margin-top: 1rem;
+            padding: .5rem 1rem .5rem 0;
+            font-size: 2rem;
+            a {
+                color: @white;
+                text-decoration: none;
+                &:hover {
+                color: #fff;  
+                }
+            }  
+        }
+    }
+}
+
+@media @tablet {
+    .about-header {
+        display: flex;
+        flex-direction: column;
+        
+        h1 {
+            
+            width: 100%; 
+            .mainheading(); 
+            
         }
     }
 }

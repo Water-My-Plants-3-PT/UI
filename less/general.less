@@ -6,6 +6,7 @@
 .container {
     font-family: 'Nunito', sans-serif;
     margin: 0;
+    height: 100vh;
 }
 
 .signup-header {
@@ -25,23 +26,34 @@
         
         h2{
             color: @white;
-            width: 50%; 
-            font-size: 4rem;
+            width: 45%; 
+            font-size: 3rem;
             text-align: center;
             margin-top: 7rem;
     
             span {
                 font-style: italic;
                 font-weight: bolder;
-    
             }
         }
-        @media @mobile {
-        
+    }
+}
 
+@media @mobile {
+    .signup-header {
+        background-image: url("/img/cover.jpeg");
+        height: 45vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: @white;
+        display: flex;
+        flex-direction: column;
+        
+        .title {
             h2{
+                margin: 3.5rem 0 1rem 0;
                 color: @white;
-                width: 75%;
+                width: 85%;
                 text-align: center;
                 font-size: 3rem;
                 font-weight: 400;
@@ -51,6 +63,42 @@
                     font-weight: 600;
                 }
             }
+        }
+    }
+}
+
+@media @widescreen {
+    .signup-header {
+        .title {
+
+            h2 {
+                font-size: 4rem;
+                width: 35%;
+            }
+        }
+    }
+}
+
+@media @tablet {
+    .signup-header {
+        .signup-nav {
+            height: max-content;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+@media @tablet {
+    .signup-header {
+        display: flex;
+        flex-direction: column;
+        
+        h1 {
+            
+            width: 100% !important; 
+            .mainheading(); 
+            
         }
     }
 }

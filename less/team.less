@@ -9,30 +9,33 @@
     .flexcolumn(); 
     h2 {
         margin: 1rem 0 0 1rem;
+        font-size: 1.5rem; 
     }
     .gallery {
         .flexrow(); 
         flex-wrap: wrap;
         margin-top: 1rem;
-        // border: hotpink 1px solid;
         justify-content: space-around;
     }
 }
 
 .card {
-    padding-top: 1rem;
-    width: 14rem;  
+    padding: .5rem;
+    width: 15rem; 
     img {
         width: 100%; 
     }
+    
     h3 {
-        color: @black;
+        .membername();
     }
     .member-title {
         .portrait-text(); 
+        margin: 1rem 0 .5rem 0;
     }
     .member-quote {
         .portrait-text(); 
+        margin: .2rem 0 .5rem 0;
     }
 }
 
@@ -62,6 +65,52 @@
         }
     }
 }
+
+@media @small {
+    .team {
+        .gallery {
+            .card {
+                flex-direction: column;
+                width: 100%;
+            }  
+            img {
+                width: 85%; 
+                margin: 0 auto;
+            } 
+            
+            .member-info {
+                width: 100%;
+                text-align: center;
+                h3 {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+@media @widescreen {
+    .gallery {
+         
+        .card {
+            width: 10rem;
+        }
+        
+        .jons-pic {
+            height: 9rem !important;
+        }
+    }
+}
+
+@media @tablet {
+    .team {
+        background-color: #fff; 
+        background-image: none;
+    }
+}
+
+
+
 
 
 

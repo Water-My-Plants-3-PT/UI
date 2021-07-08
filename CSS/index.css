@@ -1,3 +1,131 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 .font {
   font-family: 'Nunito', sans-serif;
 }
@@ -7,6 +135,7 @@
 .container {
   font-family: 'Nunito', sans-serif;
   margin: 0;
+  height: 100vh;
 }
 .signup-header {
   background-image: url("/img/cover.jpeg");
@@ -26,8 +155,8 @@
 }
 .signup-header .title h2 {
   color: #F1F3F2;
-  width: 50%;
-  font-size: 4rem;
+  width: 45%;
+  font-size: 3rem;
   text-align: center;
   margin-top: 7rem;
 }
@@ -36,9 +165,19 @@
   font-weight: bolder;
 }
 @media (max-width: 500px) {
-  .signup-header .title h2 {
+  .signup-header {
+    background-image: url("/img/cover.jpeg");
+    height: 45vh;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #F1F3F2;
-    width: 75%;
+    display: flex;
+    flex-direction: column;
+  }
+  .signup-header .title h2 {
+    margin: 3.5rem 0 1rem 0;
+    color: #F1F3F2;
+    width: 85%;
     text-align: center;
     font-size: 3rem;
     font-weight: 400;
@@ -46,6 +185,30 @@
   .signup-header .title h2 span {
     font-style: normal;
     font-weight: 600;
+  }
+}
+@media (min-width: 1130px) {
+  .signup-header .title h2 {
+    font-size: 4rem;
+    width: 35%;
+  }
+}
+@media (max-width: 800px) and (min-width: 501px) {
+  .signup-header .signup-nav {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 800px) and (min-width: 501px) {
+  .signup-header {
+    display: flex;
+    flex-direction: column;
+  }
+  .signup-header h1 {
+    width: 100% !important;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-size: 2rem;
   }
 }
 * {
@@ -62,9 +225,11 @@
   background-color: #235B2D;
 }
 .about-header h1 {
-  padding-left: 1rem;
   width: 30%;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  font-size: 2rem;
+  padding-left: 1.5rem;
+  padding-bottom: 2.5rem;
 }
 .about-header a {
   color: #F1F3F2;
@@ -74,8 +239,32 @@
   color: #fff;
 }
 @media (max-width: 500px) {
+  .about-header {
+    height: max-content;
+  }
   .about-header h1 {
-    width: auto;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem 0.5rem 0;
+    font-size: 2rem;
+  }
+  .about-header h1 a {
+    color: #F1F3F2;
+    text-decoration: none;
+  }
+  .about-header h1 a:hover {
+    color: #fff;
+  }
+}
+@media (max-width: 800px) and (min-width: 501px) {
+  .about-header {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-header h1 {
+    width: 100%;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-size: 2rem;
   }
 }
 .signup-nav {
@@ -86,9 +275,10 @@
 }
 .signup-nav h1 {
   width: 30%;
-  margin-top: 0;
+  margin-top: 1rem;
   padding-top: 0.5rem;
   padding-left: 1.5rem;
+  font-size: 2rem;
 }
 .signup-nav h1 a {
   color: #F1F3F2;
@@ -100,10 +290,11 @@
 @media (max-width: 500px) {
   .signup-nav {
     background-color: #235B2D;
+    height: 22%;
   }
   .signup-nav h1 {
-    width: auto;
-    padding: 1rem 0 1rem 1.25rem;
+    font-size: 2rem;
+    width: 100%;
   }
 }
 nav {
@@ -117,7 +308,8 @@ nav ul {
 nav ul li {
   list-style-type: none;
   padding: 0.5rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  font-size: 1rem;
 }
 nav ul li a {
   color: #F1F3F2;
@@ -134,6 +326,16 @@ nav ul li .about {
     display: none;
   }
 }
+@media (max-width: 800px) and (min-width: 501px) {
+  nav {
+    width: 100%;
+  }
+  nav ul li {
+    width: 25%;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
 .about-nav {
   width: 70%;
 }
@@ -146,6 +348,7 @@ nav ul li .about {
   list-style-type: none;
   padding: 0.5rem;
   margin-top: 1rem;
+  font-size: 1rem;
 }
 .about-nav ul li a {
   color: #F1F3F2;
@@ -154,12 +357,27 @@ nav ul li .about {
 .about-nav ul li a:hover {
   color: #fff;
 }
+@media (max-width: 800px) and (min-width: 501px) {
+  .about-nav {
+    width: 100%;
+    display: flex;
+  }
+  .about-nav ul {
+    width: 100%;
+  }
+  .about-nav ul li {
+    width: 25%;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
 .intro-text {
   width: 45%;
   margin: 3rem auto;
 }
 .intro-text p {
   line-height: 1.5rem;
+  margin-bottom: 2rem;
 }
 .intro-text button {
   margin-top: 2rem;
@@ -170,6 +388,10 @@ nav ul li .about {
   text-transform: uppercase;
   font-family: 'Nunito', sans-serif;
   font-weight: 600;
+}
+.intro-text button a {
+  text-decoration: none;
+  color: #F1F3F2;
 }
 .intro-text .about-us-button {
   display: none;
@@ -188,21 +410,38 @@ nav ul li .about {
 }
 @media (max-width: 500px) {
   .intro-text {
+    display: flex;
+    flex-direction: column;
     width: 90%;
+    margin: 0 auto;
   }
   p {
-    width: 85%;
+    margin: 3rem 0 3rem 0;
     font-size: 1.5rem;
     line-height: 1.5rem;
+    color: #79867C;
   }
   .second-p {
     display: none;
   }
   button {
     border-radius: 0.25rem;
+    font-size: larger;
   }
   .about-us-button {
     display: block !important;
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: 1130px) {
+  .intro-text {
+    width: 35%;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .intro-text button {
+    border-radius: 0.25rem;
+    font-size: 1.2rem;
   }
 }
 .team {
@@ -218,6 +457,7 @@ nav ul li .about {
 }
 .team h2 {
   margin: 1rem 0 0 1rem;
+  font-size: 1.5rem;
 }
 .team .gallery {
   display: flex;
@@ -227,24 +467,27 @@ nav ul li .about {
   justify-content: space-around;
 }
 .card {
-  padding-top: 1rem;
-  width: 14rem;
+  padding: 0.5rem;
+  width: 15rem;
 }
 .card img {
   width: 100%;
 }
 .card h3 {
-  color: rgba(48, 54, 49, 0.7);
+  margin: 1rem 0 0.5rem 0;
+  font-size: 1.2rem;
 }
 .card .member-title {
   color: #79867C;
-  margin: 0 auto;
+  margin: 0 1rem;
   font-size: 1rem;
+  margin: 1rem 0 0.5rem 0;
 }
 .card .member-quote {
   color: #79867C;
-  margin: 0 auto;
+  margin: 0 1rem;
   font-size: 1rem;
+  margin: 0.2rem 0 0.5rem 0;
 }
 @media (max-width: 500px) {
   .team {
@@ -263,13 +506,44 @@ nav ul li .about {
     width: 50%;
   }
   .team .card .member-info h3 {
-    padding: 1rem 1rem 0 1rem;
-    margin-bottom: 0;
+    margin: 1rem 0 0.5rem 0;
+    font-size: 1.2rem;
   }
   .team .left {
     flex-direction: row-reverse;
   }
   .team .left .lft {
     text-align: right;
+  }
+}
+@media (max-width: 399px) and (min-width: 91px) {
+  .team .gallery .card {
+    flex-direction: column;
+    width: 100%;
+  }
+  .team .gallery img {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .team .gallery .member-info {
+    width: 100%;
+    text-align: center;
+  }
+  .team .gallery .member-info h3 {
+    font-weight: 700;
+  }
+}
+@media (min-width: 1130px) {
+  .gallery .card {
+    width: 10rem;
+  }
+  .gallery .jons-pic {
+    height: 9rem !important;
+  }
+}
+@media (max-width: 800px) and (min-width: 501px) {
+  .team {
+    background-color: #fff;
+    background-image: none;
   }
 }
